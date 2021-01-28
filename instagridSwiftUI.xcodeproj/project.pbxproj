@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */; };
+		18EE491D25C2EA32004168EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491C25C2EA32004168EF /* ContentView.swift */; };
+		18EE491F25C2EA38004168EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE491E25C2EA38004168EF /* Assets.xcassets */; };
+		18EE492225C2EA38004168EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE492125C2EA38004168EF /* Preview Assets.xcassets */; };
+		18EE492D25C2EA39004168EF /* instagridSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */; };
+		18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18EE492925C2EA39004168EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EE490F25C2EA31004168EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18EE491625C2EA32004168EF;
+			remoteInfo = instagridSwiftUI;
+		};
+		18EE493425C2EA39004168EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EE490F25C2EA31004168EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18EE491625C2EA32004168EF;
+			remoteInfo = instagridSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18EE491725C2EA32004168EF /* instagridSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagridSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIApp.swift; sourceTree = "<group>"; };
+		18EE491C25C2EA32004168EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18EE491E25C2EA38004168EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18EE492125C2EA38004168EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18EE492325C2EA38004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUITests.swift; sourceTree = "<group>"; };
+		18EE492E25C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIUITests.swift; sourceTree = "<group>"; };
+		18EE493925C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EE491425C2EA32004168EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE492525C2EA39004168EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE493025C2EA39004168EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EE490E25C2EA31004168EF = {
+			isa = PBXGroup;
+			children = (
+				18EE491925C2EA32004168EF /* instagridSwiftUI */,
+				18EE492B25C2EA39004168EF /* instagridSwiftUITests */,
+				18EE493625C2EA39004168EF /* instagridSwiftUIUITests */,
+				18EE491825C2EA32004168EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18EE491825C2EA32004168EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EE491725C2EA32004168EF /* instagridSwiftUI.app */,
+				18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */,
+				18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EE491925C2EA32004168EF /* instagridSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */,
+				18EE491C25C2EA32004168EF /* ContentView.swift */,
+				18EE491E25C2EA38004168EF /* Assets.xcassets */,
+				18EE492325C2EA38004168EF /* Info.plist */,
+				18EE492025C2EA38004168EF /* Preview Content */,
+			);
+			path = instagridSwiftUI;
+			sourceTree = "<group>";
+		};
+		18EE492025C2EA38004168EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18EE492125C2EA38004168EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18EE492B25C2EA39004168EF /* instagridSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */,
+				18EE492E25C2EA39004168EF /* Info.plist */,
+			);
+			path = instagridSwiftUITests;
+			sourceTree = "<group>";
+		};
+		18EE493625C2EA39004168EF /* instagridSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */,
+				18EE493925C2EA39004168EF /* Info.plist */,
+			);
+			path = instagridSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EE491625C2EA32004168EF /* instagridSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EE493C25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUI" */;
+			buildPhases = (
+				18EE491325C2EA32004168EF /* Sources */,
+				18EE491425C2EA32004168EF /* Frameworks */,
+				18EE491525C2EA32004168EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = instagridSwiftUI;
+			productName = instagridSwiftUI;
+			productReference = 18EE491725C2EA32004168EF /* instagridSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18EE492725C2EA39004168EF /* instagridSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EE493F25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUITests" */;
+			buildPhases = (
+				18EE492425C2EA39004168EF /* Sources */,
+				18EE492525C2EA39004168EF /* Frameworks */,
+				18EE492625C2EA39004168EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EE492A25C2EA39004168EF /* PBXTargetDependency */,
+			);
+			name = instagridSwiftUITests;
+			productName = instagridSwiftUITests;
+			productReference = 18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18EE493225C2EA39004168EF /* instagridSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EE494225C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUIUITests" */;
+			buildPhases = (
+				18EE492F25C2EA39004168EF /* Sources */,
+				18EE493025C2EA39004168EF /* Frameworks */,
+				18EE493125C2EA39004168EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EE493525C2EA39004168EF /* PBXTargetDependency */,
+			);
+			name = instagridSwiftUIUITests;
+			productName = instagridSwiftUIUITests;
+			productReference = 18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EE490F25C2EA31004168EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					18EE491625C2EA32004168EF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					18EE492725C2EA39004168EF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 18EE491625C2EA32004168EF;
+					};
+					18EE493225C2EA39004168EF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 18EE491625C2EA32004168EF;
+					};
+				};
+			};
+			buildConfigurationList = 18EE491225C2EA31004168EF /* Build configuration list for PBXProject "instagridSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18EE490E25C2EA31004168EF;
+			productRefGroup = 18EE491825C2EA32004168EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EE491625C2EA32004168EF /* instagridSwiftUI */,
+				18EE492725C2EA39004168EF /* instagridSwiftUITests */,
+				18EE493225C2EA39004168EF /* instagridSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EE491525C2EA32004168EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EE492225C2EA38004168EF /* Preview Assets.xcassets in Resources */,
+				18EE491F25C2EA38004168EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE492625C2EA39004168EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE493125C2EA39004168EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EE491325C2EA32004168EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EE491D25C2EA32004168EF /* ContentView.swift in Sources */,
+				18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE492425C2EA39004168EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EE492D25C2EA39004168EF /* instagridSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EE492F25C2EA39004168EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18EE492A25C2EA39004168EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18EE491625C2EA32004168EF /* instagridSwiftUI */;
+			targetProxy = 18EE492925C2EA39004168EF /* PBXContainerItemProxy */;
+		};
+		18EE493525C2EA39004168EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18EE491625C2EA32004168EF /* instagridSwiftUI */;
+			targetProxy = 18EE493425C2EA39004168EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18EE493A25C2EA39004168EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18EE493B25C2EA39004168EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18EE493D25C2EA39004168EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"instagridSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = instagridSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18EE493E25C2EA39004168EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"instagridSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = instagridSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18EE494025C2EA39004168EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				INFOPLIST_FILE = instagridSwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagridSwiftUI.app/instagridSwiftUI";
+			};
+			name = Debug;
+		};
+		18EE494125C2EA39004168EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				INFOPLIST_FILE = instagridSwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagridSwiftUI.app/instagridSwiftUI";
+			};
+			name = Release;
+		};
+		18EE494325C2EA39004168EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				INFOPLIST_FILE = instagridSwiftUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = instagridSwiftUI;
+			};
+			name = Debug;
+		};
+		18EE494425C2EA39004168EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D44BN2V8A;
+				INFOPLIST_FILE = instagridSwiftUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = instagridSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EE491225C2EA31004168EF /* Build configuration list for PBXProject "instagridSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EE493A25C2EA39004168EF /* Debug */,
+				18EE493B25C2EA39004168EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EE493C25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EE493D25C2EA39004168EF /* Debug */,
+				18EE493E25C2EA39004168EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EE493F25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EE494025C2EA39004168EF /* Debug */,
+				18EE494125C2EA39004168EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EE494225C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EE494325C2EA39004168EF /* Debug */,
+				18EE494425C2EA39004168EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EE490F25C2EA31004168EF /* Project object */;
+}
