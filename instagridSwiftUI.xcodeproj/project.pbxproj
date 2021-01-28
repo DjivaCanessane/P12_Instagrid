@@ -13,6 +13,8 @@
 		18EE492225C2EA38004168EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE492125C2EA38004168EF /* Preview Assets.xcassets */; };
 		18EE492D25C2EA39004168EF /* instagridSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */; };
 		18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */; };
+		18EE497725C30001004168EF /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497625C30000004168EF /* ThirstySoftRegular.otf */; };
+		18EE497C25C3000A004168EF /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497B25C3000A004168EF /* Delm-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIUITests.swift; sourceTree = "<group>"; };
 		18EE493925C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EE497625C30000004168EF /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		18EE497B25C3000A004168EF /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				18EE492325C2EA38004168EF /* Info.plist */,
+				18EE491C25C2EA32004168EF /* ContentView.swift */,
 				18EE496325C2F9B5004168EF /* Supporting Files */,
 				18EE492025C2EA38004168EF /* Preview Content */,
 			);
@@ -131,8 +136,9 @@
 		18EE496325C2F9B5004168EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18EE497B25C3000A004168EF /* Delm-Medium.otf */,
+				18EE497625C30000004168EF /* ThirstySoftRegular.otf */,
 				18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */,
-				18EE491C25C2EA32004168EF /* ContentView.swift */,
 				18EE491E25C2EA38004168EF /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -241,7 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE497725C30001004168EF /* ThirstySoftRegular.otf in Resources */,
 				18EE492225C2EA38004168EF /* Preview Assets.xcassets in Resources */,
+				18EE497C25C3000A004168EF /* Delm-Medium.otf in Resources */,
 				18EE491F25C2EA38004168EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
