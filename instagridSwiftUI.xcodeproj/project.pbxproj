@@ -38,7 +38,7 @@
 		18EE491C25C2EA32004168EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18EE491E25C2EA38004168EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18EE492125C2EA38004168EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		18EE492325C2EA38004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EE492325C2EA38004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = instagridSwiftUI/Info.plist; sourceTree = SOURCE_ROOT; };
 		18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUITests.swift; sourceTree = "<group>"; };
 		18EE492E25C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,10 +95,8 @@
 		18EE491925C2EA32004168EF /* instagridSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */,
-				18EE491C25C2EA32004168EF /* ContentView.swift */,
-				18EE491E25C2EA38004168EF /* Assets.xcassets */,
 				18EE492325C2EA38004168EF /* Info.plist */,
+				18EE496325C2F9B5004168EF /* Supporting Files */,
 				18EE492025C2EA38004168EF /* Preview Content */,
 			);
 			path = instagridSwiftUI;
@@ -128,6 +126,16 @@
 				18EE493925C2EA39004168EF /* Info.plist */,
 			);
 			path = instagridSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		18EE496325C2F9B5004168EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */,
+				18EE491C25C2EA32004168EF /* ContentView.swift */,
+				18EE491E25C2EA38004168EF /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -402,6 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
