@@ -15,7 +15,6 @@
 		18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */; };
 		18EE497725C30001004168EF /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497625C30000004168EF /* ThirstySoftRegular.otf */; };
 		18EE497C25C3000A004168EF /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497B25C3000A004168EF /* Delm-Medium.otf */; };
-		18EE498125C32974004168EF /* LayoutButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE498025C32974004168EF /* LayoutButtons.swift */; };
 		18EE498925C32CE7004168EF /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE498825C32CE7004168EF /* GridLayout.swift */; };
 		18EE499125C32F74004168EF /* TopItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE499025C32F74004168EF /* TopItems.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		18EE493925C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EE497625C30000004168EF /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		18EE497B25C3000A004168EF /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
-		18EE498025C32974004168EF /* LayoutButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutButtons.swift; sourceTree = "<group>"; };
 		18EE498825C32CE7004168EF /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		18EE499025C32F74004168EF /* TopItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +105,6 @@
 			children = (
 				18EE492325C2EA38004168EF /* Info.plist */,
 				18EE491C25C2EA32004168EF /* MainView.swift */,
-				18EE498025C32974004168EF /* LayoutButtons.swift */,
 				18EE498825C32CE7004168EF /* GridLayout.swift */,
 				18EE499025C32F74004168EF /* TopItems.swift */,
 				18EE496325C2F9B5004168EF /* Supporting Files */,
@@ -288,7 +285,6 @@
 				18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */,
 				18EE499125C32F74004168EF /* TopItems.swift in Sources */,
 				18EE498925C32CE7004168EF /* GridLayout.swift in Sources */,
-				18EE498125C32974004168EF /* LayoutButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
