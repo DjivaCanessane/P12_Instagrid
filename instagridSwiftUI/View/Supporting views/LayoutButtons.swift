@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LayoutButtons: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
-    @State var selectedFirstLayout = false
+    @State var selectedFirstLayout = true
     @State var selectedSecondLayout = false
     @State var selectedThirdLayout = false
     var body: some View {

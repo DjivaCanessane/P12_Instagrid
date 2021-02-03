@@ -8,6 +8,6 @@
 import Foundation
 
 class LayoutViewModel: ObservableObject {
-    @Published var showTopLeftRectangle = true
+    @Published var showTopLeftRectangle = false
     @Published var showBottomRightRectangle = true
 }
