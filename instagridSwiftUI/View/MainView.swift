@@ -17,7 +17,7 @@ struct MainView: View {
                 VStack {
                     TopItems()
                     GridLayout()
-                    
+                    LayoutButtons()
                     
                 }.frame(width: geometry.size.width,
                         height: geometry.size.height,
