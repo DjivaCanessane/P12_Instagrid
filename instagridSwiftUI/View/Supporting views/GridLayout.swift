@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct GridLayout: View {
-    @State var showTopLeftRectangle = true
-    @State var showBottomRightRectangle = true
-
+    @EnvironmentObject var layoutViewModel: LayoutViewModel
+    
     var body: some View {
         ZStack {
 
             VStack {
                 VStack {
                     HStack {
-                        if showTopLeftRectangle {
+                        if layoutViewModel.showTopLeftRectangle {
                             Button(action: {
                                 print("Top left button was tapped")
                             }) {
@@ -47,7 +46,7 @@ struct GridLayout: View {
                                 Image("Plus")
                             }
                         }
-                        if showBottomRightRectangle {
+                        if layoutViewModel.showBottomRightRectangle {
                             Button(action: {
                                 print("Bottom right button was tapped")
                             }) {
@@ -66,16 +65,16 @@ struct GridLayout: View {
                 .background(SwiftUI.Color.blue)
                 .aspectRatio(1, contentMode: .fill)
                 .frame(width: 280, height: 280, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                Button("ToggleUP") {
-                    withAnimation{
-                        self.showTopLeftRectangle.toggle()
-                    }
-                }
-                Button("ToggleBottom") {
-                    withAnimation{
-                        self.showBottomRightRectangle.toggle()
-                    }
-                }
+//                Button("ToggleUP") {
+//                    withAnimation{
+//                        self.showTopLeftRectangle.toggle()
+//                    }
+//                }
+//                Button("ToggleBottom") {
+//                    withAnimation{
+//                        self.showBottomRightRectangle.toggle()
+//                    }
+//                }
             }
             
             
@@ -98,8 +97,8 @@ extension View {
         }
     }
 }
-struct MainLayout_Previews: PreviewProvider {
-    static var previews: some View {
-        GridLayout()
-    }
-}
+//struct MainLayout_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GridLayout()
+//    }
+//}

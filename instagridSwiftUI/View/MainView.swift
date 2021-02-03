@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var layoutViewModel: LayoutViewModel
+    
     var body: some View {
-
+        let topItems = TopItems()
+        let gridLayout = GridLayout()
+        let layoutButtons = LayoutButtons()
         ZStack {
             Color.yellow
                 .edgesIgnoringSafeArea(.all)
             GeometryReader { geometry in
                 VStack {
-                    TopItems()
-                    GridLayout()
-                    LayoutButtons()
+                    topItems
+                    gridLayout
+                    layoutButtons
                     
                 }.frame(width: geometry.size.width,
                         height: geometry.size.height,

@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct LayoutButtons: View {
+    @EnvironmentObject var layoutViewModel: LayoutViewModel
+    
     var body: some View {
         HStack {
             Button(action: {
-                print("Bottom left button was tapped")
+                withAnimation {
+                    layoutViewModel.showTopLeftRectangle = false
+                    layoutViewModel.showBottomRightRectangle = true
+                }
             }) {
                 Image("Layout 1")
                     .resizable()
@@ -22,7 +27,10 @@ struct LayoutButtons: View {
             
             
             Button(action: {
-                print("Bottom left button was tapped")
+                withAnimation {
+                    layoutViewModel.showTopLeftRectangle = true
+                    layoutViewModel.showBottomRightRectangle = false
+                }
             }) {
                 Image("Layout 2")
                     .resizable()
@@ -31,7 +39,10 @@ struct LayoutButtons: View {
             
             
             Button(action: {
-                print("Bottom left button was tapped")
+                withAnimation {
+                    layoutViewModel.showTopLeftRectangle = true
+                    layoutViewModel.showBottomRightRectangle = true
+                }
             }) {
                 Image("Layout 3")
                     .resizable()
@@ -41,8 +52,8 @@ struct LayoutButtons: View {
     }
 }
 
-struct LayoutButtons_Previews: PreviewProvider {
-    static var previews: some View {
-        LayoutButtons()
-    }
-}
+//struct LayoutButtons_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LayoutButtons()
+//    }
+//}

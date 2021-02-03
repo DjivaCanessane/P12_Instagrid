@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct instagridSwiftUIApp: App {
+    var layoutViewModel = LayoutViewModel()
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView().environmentObject(layoutViewModel)
         }
     }
 }
