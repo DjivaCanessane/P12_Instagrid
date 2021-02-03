@@ -9,44 +9,81 @@ import SwiftUI
 
 struct LayoutButtons: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
-    
+    @State var selectedFirstLayout = false
+    @State var selectedSecondLayout = false
+    @State var selectedThirdLayout = false
     var body: some View {
         HStack {
             Button(action: {
                 withAnimation {
+                    //Update GridView
                     layoutViewModel.showTopLeftRectangle = false
                     layoutViewModel.showBottomRightRectangle = true
+
+                    //Update layout button Images
+                    selectedFirstLayout = true
+                    selectedSecondLayout = false
+                    selectedThirdLayout = false
                 }
             }) {
-                Image("Layout 1")
-                    .resizable()
-                    .frame(width: 85, height: 85, alignment: .center)
+                ZStack {
+                    Image("Layout 1")
+                        .resizable()
+                        .frame(width: 85, height: 85, alignment: .center)
+                    if selectedFirstLayout {
+                        Image("Selected")
+                            .resizable()
+                            .frame(width: 85, height: 85, alignment: .center)
+                    }
+                }
             }
-            
-            
-            
             
             Button(action: {
                 withAnimation {
+                    //Update GridView
                     layoutViewModel.showTopLeftRectangle = true
                     layoutViewModel.showBottomRightRectangle = false
+                    
+                    //Update layout button Images
+                    selectedFirstLayout = false
+                    selectedSecondLayout = true
+                    selectedThirdLayout = false
                 }
             }) {
-                Image("Layout 2")
-                    .resizable()
-                    .frame(width: 85, height: 85, alignment: .center)
+                ZStack {
+                    Image("Layout 2")
+                        .resizable()
+                        .frame(width: 85, height: 85, alignment: .center)
+                    if selectedSecondLayout {
+                        Image("Selected")
+                            .resizable()
+                            .frame(width: 85, height: 85, alignment: .center)
+                    }
+                }
             }
-            
             
             Button(action: {
                 withAnimation {
+                    //Update GridView
                     layoutViewModel.showTopLeftRectangle = true
                     layoutViewModel.showBottomRightRectangle = true
+                    
+                    //Update layout button Images
+                    selectedFirstLayout = false
+                    selectedSecondLayout = false
+                    selectedThirdLayout = true
                 }
             }) {
-                Image("Layout 3")
-                    .resizable()
-                    .frame(width: 85, height: 85, alignment: .center)
+                ZStack {
+                    Image("Layout 3")
+                        .resizable()
+                        .frame(width: 85, height: 85, alignment: .center)
+                    if selectedThirdLayout {
+                        Image("Selected")
+                            .resizable()
+                            .frame(width: 85, height: 85, alignment: .center)
+                    }
+                }
             }
         }
     }
