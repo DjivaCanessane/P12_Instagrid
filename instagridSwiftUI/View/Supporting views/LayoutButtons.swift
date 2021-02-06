@@ -9,11 +9,13 @@ import SwiftUI
 
 struct LayoutButtons: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     @State var selectedFirstLayout = true
     @State var selectedSecondLayout = false
     @State var selectedThirdLayout = false
     var body: some View {
-        HStack {
+        Group {
             Button(action: {
                 withAnimation {
                     //Update GridView
@@ -89,8 +91,8 @@ struct LayoutButtons: View {
     }
 }
 
-//struct LayoutButtons_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LayoutButtons()
-//    }
-//}
+struct LayoutButtons_Previews: PreviewProvider {
+    static var previews: some View {
+        LayoutButtons().environmentObject(LayoutViewModel())
+    }
+}

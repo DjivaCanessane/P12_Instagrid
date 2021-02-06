@@ -18,7 +18,7 @@
 		18EE497725C30001004168EF /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497625C30000004168EF /* ThirstySoftRegular.otf */; };
 		18EE497C25C3000A004168EF /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497B25C3000A004168EF /* Delm-Medium.otf */; };
 		18EE498925C32CE7004168EF /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE498825C32CE7004168EF /* GridLayout.swift */; };
-		18EE499125C32F74004168EF /* TopItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE499025C32F74004168EF /* TopItems.swift */; };
+		18EE499125C32F74004168EF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE499025C32F74004168EF /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		18EE497625C30000004168EF /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		18EE497B25C3000A004168EF /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		18EE498825C32CE7004168EF /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
-		18EE499025C32F74004168EF /* TopItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopItems.swift; sourceTree = "<group>"; };
+		18EE499025C32F74004168EF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				18EE498825C32CE7004168EF /* GridLayout.swift */,
-				18EE499025C32F74004168EF /* TopItems.swift */,
+				18EE499025C32F74004168EF /* HeaderView.swift */,
 				188770F625CAF503008028BC /* LayoutButtons.swift */,
 			);
 			path = "Supporting views";
@@ -315,7 +315,7 @@
 				18EE491D25C2EA32004168EF /* MainView.swift in Sources */,
 				188770F725CAF503008028BC /* LayoutButtons.swift in Sources */,
 				18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */,
-				18EE499125C32F74004168EF /* TopItems.swift in Sources */,
+				18EE499125C32F74004168EF /* HeaderView.swift in Sources */,
 				18EE498925C32CE7004168EF /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TopItems: View {
+struct HeaderView: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     
@@ -16,7 +16,7 @@ struct TopItems: View {
             if horizontalSizeClass == .compact && verticalSizeClass == .regular {
                 Text("Instagrid")
                     .font(Font.custom("ThirstySoftRegular", size: 30))
-                    .padding()
+                    .padding(32)
                 Image("Arrow Up")
                     .resizable()
                     .aspectRatio(1, contentMode: .fill)
@@ -26,9 +26,6 @@ struct TopItems: View {
                     .padding()
 
             } else {
-                Text("Instagrid")
-                    .font(Font.custom("ThirstySoftRegular", size: 30))
-                    .padding()
                 Image("Arrow Left")
                     .resizable()
                     .aspectRatio(1, contentMode: .fill)
@@ -45,6 +42,6 @@ struct TopItems: View {
 
 struct TopItems_Previews: PreviewProvider {
     static var previews: some View {
-        TopItems()
+        HeaderView()
     }
 }
