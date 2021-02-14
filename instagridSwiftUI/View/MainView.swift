@@ -1,14 +1,9 @@
-//
-//  ContentView.swift
-//  instagridSwiftUI
-//
-//  Created by Djiveradjane Canessane on 28/01/2021.
-//
-
 import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
+    @EnvironmentObject var imagePickerViewModel: ImagePickerViewModel
+
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     
@@ -29,12 +24,10 @@ struct MainView: View {
                 .onEnded({ (value) in
                     // up swipe
                     if value.translation.height < 0 && isPortraitMode() {
-                        
                         withAnimation {
                             self.verticalOffset = -800
                         }
                         hasSwipped = true
-                        
                     }
                     // left swipe
                     else if value.translation.width < 0 && !isPortraitMode() {
@@ -45,8 +38,8 @@ struct MainView: View {
                     }
                 })
             )
-            
         let layoutButtons = LayoutButtons()
+
         ZStack {
             Color.yellow
                 .edgesIgnoringSafeArea(.all)
@@ -91,9 +84,16 @@ struct MainView: View {
             
 
         }
+        .fullScreenCover(
+            isPresented: $imagePickerViewModel.isPresentingImagePicker,
+            content: {
+                ImagePicker(
+                    sourceType: imagePickerViewModel.sourceType,
+                    completionHandler: imagePickerViewModel.didSelectImage
+                )
+        })
         .alert(isPresented: $hasSwipped) {
             Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("OK"), action: {
-                
                 withAnimation {
                     self.verticalOffset = 0
                     self.horizontalOffset = 0

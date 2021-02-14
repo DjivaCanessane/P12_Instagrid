@@ -9,28 +9,26 @@ import SwiftUI
 
 struct GridLayout: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
-    
+    @EnvironmentObject var imagePickerViewModel: ImagePickerViewModel
+
     var body: some View {
-        
             VStack {
                 HStack {
                     if layoutViewModel.showTopLeftRectangle {
                         Button(action: {
                             print("Top left button was tapped")
+                            imagePickerViewModel.sender = .topLeft
+                            imagePickerViewModel.choosePhoto()
                         }) {
-                            ZStack {
-                                Rectangle().fill(SwiftUI.Color.white)
-                                Image("Plus")
-                            }
+                            imageView(for: imagePickerViewModel.selectedImageTopLeft)
                         }
                     }
                     Button(action: {
                         print("Top right button was tapped")
+                        imagePickerViewModel.sender = .topRight
+                        imagePickerViewModel.choosePhoto()
                     }) {
-                        ZStack {
-                            Rectangle().fill(SwiftUI.Color.white)
-                            Image("Plus")
-                        }
+                        imageView(for: imagePickerViewModel.selectedImageTopRight)
                     }
                 }
                 .padding(.horizontal, 8)
@@ -38,20 +36,18 @@ struct GridLayout: View {
                 HStack {
                     Button(action: {
                         print("Bottom left button was tapped")
+                        imagePickerViewModel.sender = .bottomLeft
+                        imagePickerViewModel.choosePhoto()
                     }) {
-                        ZStack {
-                            Rectangle().fill(SwiftUI.Color.white)
-                            Image("Plus")
-                        }
+                        imageView(for: imagePickerViewModel.selectedImageBottomLeft)
                     }
                     if layoutViewModel.showBottomRightRectangle {
                         Button(action: {
                             print("Bottom right button was tapped")
+                            imagePickerViewModel.sender = .bottomRight
+                            imagePickerViewModel.choosePhoto()
                         }) {
-                            ZStack {
-                                Rectangle().fill(SwiftUI.Color.white)
-                                Image("Plus")
-                            }
+                            imageView(for: imagePickerViewModel.selectedImageBottomRight)
                         }
                     }
                 }
@@ -65,6 +61,29 @@ struct GridLayout: View {
             .padding(8)
             
         
+    }
+
+    @ViewBuilder
+    func imageView(for image: UIImage?) -> some View {
+        if let image = image {
+            ZStack {
+                Rectangle().fill(SwiftUI.Color.white)
+                GeometryReader { reader in
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: reader.size.width, height: reader.size.height, alignment: .center)
+                        .clipped()
+                }
+                
+            }
+        }
+        else {
+            ZStack {
+                Rectangle().fill(SwiftUI.Color.white)
+                Image("Plus")
+            }
+        }
     }
 }
 

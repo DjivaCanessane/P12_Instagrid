@@ -9,50 +9,29 @@
 /* Begin PBXBuildFile section */
 		188770F725CAF503008028BC /* LayoutButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188770F625CAF503008028BC /* LayoutButtons.swift */; };
 		1887710025CB0AC2008028BC /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188770FF25CB0AC2008028BC /* LayoutViewModel.swift */; };
+		188A445F25D687C9006C5EAA /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A445E25D687C9006C5EAA /* ImagePickerViewModel.swift */; };
+		188A446525D68847006C5EAA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A446425D68847006C5EAA /* ImagePicker.swift */; };
 		18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */; };
 		18EE491D25C2EA32004168EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491C25C2EA32004168EF /* MainView.swift */; };
 		18EE491F25C2EA38004168EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE491E25C2EA38004168EF /* Assets.xcassets */; };
 		18EE492225C2EA38004168EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE492125C2EA38004168EF /* Preview Assets.xcassets */; };
-		18EE492D25C2EA39004168EF /* instagridSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */; };
-		18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */; };
 		18EE497725C30001004168EF /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497625C30000004168EF /* ThirstySoftRegular.otf */; };
 		18EE497C25C3000A004168EF /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE497B25C3000A004168EF /* Delm-Medium.otf */; };
 		18EE498925C32CE7004168EF /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE498825C32CE7004168EF /* GridLayout.swift */; };
 		18EE499125C32F74004168EF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE499025C32F74004168EF /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		18EE492925C2EA39004168EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18EE490F25C2EA31004168EF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18EE491625C2EA32004168EF;
-			remoteInfo = instagridSwiftUI;
-		};
-		18EE493425C2EA39004168EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18EE490F25C2EA31004168EF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18EE491625C2EA32004168EF;
-			remoteInfo = instagridSwiftUI;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		188770F625CAF503008028BC /* LayoutButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutButtons.swift; sourceTree = "<group>"; };
 		188770FF25CB0AC2008028BC /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
+		188A445E25D687C9006C5EAA /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
+		188A446425D68847006C5EAA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		18EE491725C2EA32004168EF /* instagridSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagridSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIApp.swift; sourceTree = "<group>"; };
 		18EE491C25C2EA32004168EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		18EE491E25C2EA38004168EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18EE492125C2EA38004168EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18EE492325C2EA38004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = instagridSwiftUI/Info.plist; sourceTree = SOURCE_ROOT; };
-		18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUITests.swift; sourceTree = "<group>"; };
-		18EE492E25C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagridSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIUITests.swift; sourceTree = "<group>"; };
-		18EE493925C2EA39004168EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EE497625C30000004168EF /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		18EE497B25C3000A004168EF /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		18EE498825C32CE7004168EF /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
@@ -67,26 +46,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18EE492525C2EA39004168EF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18EE493025C2EA39004168EF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		188770F425CAF4BA008028BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				188A446325D6882A006C5EAA /* UIViewControllers */,
 				18EE491C25C2EA32004168EF /* MainView.swift */,
 				188770F525CAF4C7008028BC /* Supporting views */,
 			);
@@ -107,16 +73,23 @@
 			isa = PBXGroup;
 			children = (
 				188770FF25CB0AC2008028BC /* LayoutViewModel.swift */,
+				188A445E25D687C9006C5EAA /* ImagePickerViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		188A446325D6882A006C5EAA /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				188A446425D68847006C5EAA /* ImagePicker.swift */,
+			);
+			path = UIViewControllers;
 			sourceTree = "<group>";
 		};
 		18EE490E25C2EA31004168EF = {
 			isa = PBXGroup;
 			children = (
 				18EE491925C2EA32004168EF /* instagridSwiftUI */,
-				18EE492B25C2EA39004168EF /* instagridSwiftUITests */,
-				18EE493625C2EA39004168EF /* instagridSwiftUIUITests */,
 				18EE491825C2EA32004168EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				18EE491725C2EA32004168EF /* instagridSwiftUI.app */,
-				18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */,
-				18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,24 +120,6 @@
 				18EE492125C2EA38004168EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		18EE492B25C2EA39004168EF /* instagridSwiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				18EE492C25C2EA39004168EF /* instagridSwiftUITests.swift */,
-				18EE492E25C2EA39004168EF /* Info.plist */,
-			);
-			path = instagridSwiftUITests;
-			sourceTree = "<group>";
-		};
-		18EE493625C2EA39004168EF /* instagridSwiftUIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				18EE493725C2EA39004168EF /* instagridSwiftUIUITests.swift */,
-				18EE493925C2EA39004168EF /* Info.plist */,
-			);
-			path = instagridSwiftUIUITests;
 			sourceTree = "<group>";
 		};
 		18EE496325C2F9B5004168EF /* Supporting Files */ = {
@@ -200,42 +153,6 @@
 			productReference = 18EE491725C2EA32004168EF /* instagridSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18EE492725C2EA39004168EF /* instagridSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18EE493F25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUITests" */;
-			buildPhases = (
-				18EE492425C2EA39004168EF /* Sources */,
-				18EE492525C2EA39004168EF /* Frameworks */,
-				18EE492625C2EA39004168EF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18EE492A25C2EA39004168EF /* PBXTargetDependency */,
-			);
-			name = instagridSwiftUITests;
-			productName = instagridSwiftUITests;
-			productReference = 18EE492825C2EA39004168EF /* instagridSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		18EE493225C2EA39004168EF /* instagridSwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18EE494225C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUIUITests" */;
-			buildPhases = (
-				18EE492F25C2EA39004168EF /* Sources */,
-				18EE493025C2EA39004168EF /* Frameworks */,
-				18EE493125C2EA39004168EF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18EE493525C2EA39004168EF /* PBXTargetDependency */,
-			);
-			name = instagridSwiftUIUITests;
-			productName = instagridSwiftUIUITests;
-			productReference = 18EE493325C2EA39004168EF /* instagridSwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,14 +164,6 @@
 				TargetAttributes = {
 					18EE491625C2EA32004168EF = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					18EE492725C2EA39004168EF = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 18EE491625C2EA32004168EF;
-					};
-					18EE493225C2EA39004168EF = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 18EE491625C2EA32004168EF;
 					};
 				};
 			};
@@ -272,8 +181,6 @@
 			projectRoot = "";
 			targets = (
 				18EE491625C2EA32004168EF /* instagridSwiftUI */,
-				18EE492725C2EA39004168EF /* instagridSwiftUITests */,
-				18EE493225C2EA39004168EF /* instagridSwiftUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,20 +197,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18EE492625C2EA39004168EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18EE493125C2EA39004168EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,45 +204,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188A445F25D687C9006C5EAA /* ImagePickerViewModel.swift in Sources */,
 				1887710025CB0AC2008028BC /* LayoutViewModel.swift in Sources */,
 				18EE491D25C2EA32004168EF /* MainView.swift in Sources */,
 				188770F725CAF503008028BC /* LayoutButtons.swift in Sources */,
 				18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */,
+				188A446525D68847006C5EAA /* ImagePicker.swift in Sources */,
 				18EE499125C32F74004168EF /* HeaderView.swift in Sources */,
 				18EE498925C32CE7004168EF /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18EE492425C2EA39004168EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18EE492D25C2EA39004168EF /* instagridSwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18EE492F25C2EA39004168EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18EE493825C2EA39004168EF /* instagridSwiftUIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18EE492A25C2EA39004168EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18EE491625C2EA32004168EF /* instagridSwiftUI */;
-			targetProxy = 18EE492925C2EA39004168EF /* PBXContainerItemProxy */;
-		};
-		18EE493525C2EA39004168EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18EE491625C2EA32004168EF /* instagridSwiftUI */;
-			targetProxy = 18EE493425C2EA39004168EF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		18EE493A25C2EA39004168EF /* Debug */ = {
@@ -514,90 +380,6 @@
 			};
 			name = Release;
 		};
-		18EE494025C2EA39004168EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D44BN2V8A;
-				INFOPLIST_FILE = instagridSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagridSwiftUI.app/instagridSwiftUI";
-			};
-			name = Debug;
-		};
-		18EE494125C2EA39004168EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D44BN2V8A;
-				INFOPLIST_FILE = instagridSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagridSwiftUI.app/instagridSwiftUI";
-			};
-			name = Release;
-		};
-		18EE494325C2EA39004168EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D44BN2V8A;
-				INFOPLIST_FILE = instagridSwiftUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = instagridSwiftUI;
-			};
-			name = Debug;
-		};
-		18EE494425C2EA39004168EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D44BN2V8A;
-				INFOPLIST_FILE = instagridSwiftUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.instagridSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = instagridSwiftUI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,24 +397,6 @@
 			buildConfigurations = (
 				18EE493D25C2EA39004168EF /* Debug */,
 				18EE493E25C2EA39004168EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18EE493F25C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18EE494025C2EA39004168EF /* Debug */,
-				18EE494125C2EA39004168EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18EE494225C2EA39004168EF /* Build configuration list for PBXNativeTarget "instagridSwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18EE494325C2EA39004168EF /* Debug */,
-				18EE494425C2EA39004168EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
