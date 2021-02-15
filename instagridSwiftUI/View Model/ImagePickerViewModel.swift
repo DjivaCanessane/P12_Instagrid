@@ -21,11 +21,6 @@ class ImagePickerViewModel: ObservableObject {
         isPresentingImagePicker = true
     }
 
-//    func takePhoto() {
-//        sourceType = .camera
-//        isPresentingImagePicker = true
-//    }
-
     func didSelectImage(_ image: UIImage?) {
         switch sender {
         case .topLeft:

@@ -10,11 +10,10 @@ struct MainView: View {
     @State var verticalOffset: CGFloat = CGFloat.zero
     @State var horizontalOffset: CGFloat = CGFloat.zero
 
-    @State var hasSwipped: Bool = false
     @State var rect: CGRect = .zero
     @State var gridImage: UIImage? = nil
     @State var activeSheet: ActiveSheet?
-
+    @State var isGridLayoutEmpty: Bool = false
     private func isPortraitMode() -> Bool {
         return horizontalSizeClass == .compact && verticalSizeClass == .regular
     }
@@ -31,16 +30,21 @@ struct MainView: View {
                         withAnimation {
                             self.verticalOffset = -800
                         }
-                        hasSwipped = true
-                        activeSheet = .share
                     }
                     // left swipe
                     else if value.translation.width < 0 && !isPortraitMode() {
                         withAnimation {
                             self.horizontalOffset = -800
                         }
-                        hasSwipped = true
+                    }
+                    
+                    if imagePickerViewModel.selectedImageTopRight != nil
+                    || imagePickerViewModel.selectedImageTopLeft != nil
+                    || imagePickerViewModel.selectedImageBottomRight != nil
+                    || imagePickerViewModel.selectedImageBottomLeft != nil {
                         activeSheet = .share
+                    } else {
+                        isGridLayoutEmpty = true
                     }
                 })
             )
@@ -101,22 +105,24 @@ struct MainView: View {
                     }
                 )
             case .share:
-                ShareView(activityItems: [self.gridImage as Any], callback: {_,_,_,_ in
-                    withAnimation {
-                        self.verticalOffset = 0
-                        self.horizontalOffset = 0
-                    }
-                })
+                
+                    ShareView(activityItems: [self.gridImage as Any], callback: {_,_,_,_ in
+                        withAnimation {
+                            self.verticalOffset = 0
+                            self.horizontalOffset = 0
+                        }
+                    })
+
             }
         }
-//        .alert(isPresented: $hasSwipped) {
-//            Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("OK"), action: {
-//                withAnimation {
-//                    self.verticalOffset = 0
-//                    self.horizontalOffset = 0
-//                }
-//            }))
-//        }
+        .alert(isPresented: $isGridLayoutEmpty) {
+            Alert(title: Text("No images"), message: Text("Please select some images before sharing."), dismissButton: .default(Text("OK"), action: {
+                withAnimation {
+                    self.verticalOffset = 0
+                    self.horizontalOffset = 0
+                }
+            }))
+        }
     }
 }
 
