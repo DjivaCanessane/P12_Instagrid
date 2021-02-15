@@ -11,6 +11,8 @@ struct GridLayout: View {
     @EnvironmentObject var layoutViewModel: LayoutViewModel
     @EnvironmentObject var imagePickerViewModel: ImagePickerViewModel
 
+    @Binding var activeSheet: ActiveSheet?
+    @Binding var rect: CGRect
     var body: some View {
             VStack {
                 HStack {
@@ -19,6 +21,7 @@ struct GridLayout: View {
                             print("Top left button was tapped")
                             imagePickerViewModel.sender = .topLeft
                             imagePickerViewModel.choosePhoto()
+                            activeSheet = .pickImage
                         }) {
                             imageView(for: imagePickerViewModel.selectedImageTopLeft)
                         }
@@ -27,6 +30,7 @@ struct GridLayout: View {
                         print("Top right button was tapped")
                         imagePickerViewModel.sender = .topRight
                         imagePickerViewModel.choosePhoto()
+                        activeSheet = .pickImage
                     }) {
                         imageView(for: imagePickerViewModel.selectedImageTopRight)
                     }
@@ -38,6 +42,7 @@ struct GridLayout: View {
                         print("Bottom left button was tapped")
                         imagePickerViewModel.sender = .bottomLeft
                         imagePickerViewModel.choosePhoto()
+                        activeSheet = .pickImage
                     }) {
                         imageView(for: imagePickerViewModel.selectedImageBottomLeft)
                     }
@@ -46,6 +51,7 @@ struct GridLayout: View {
                             print("Bottom right button was tapped")
                             imagePickerViewModel.sender = .bottomRight
                             imagePickerViewModel.choosePhoto()
+                            activeSheet = .pickImage
                         }) {
                             imageView(for: imagePickerViewModel.selectedImageBottomRight)
                         }
@@ -59,6 +65,7 @@ struct GridLayout: View {
             .background(SwiftUI.Color.blue)
             .aspectRatio(1, contentMode: .fit)
             .padding(8)
+            .background(RectGetter(rect: $rect))
             
         
     }
@@ -87,8 +94,8 @@ struct GridLayout: View {
     }
 }
 
-struct MainLayout_Previews: PreviewProvider {
-    static var previews: some View {
-        GridLayout().environmentObject(LayoutViewModel())
-    }
-}
+//struct MainLayout_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GridLayout().environmentObject(LayoutViewModel())
+//    }
+//}

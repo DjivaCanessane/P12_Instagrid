@@ -11,6 +11,8 @@
 		1887710025CB0AC2008028BC /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188770FF25CB0AC2008028BC /* LayoutViewModel.swift */; };
 		188A445F25D687C9006C5EAA /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A445E25D687C9006C5EAA /* ImagePickerViewModel.swift */; };
 		188A446525D68847006C5EAA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A446425D68847006C5EAA /* ImagePicker.swift */; };
+		188A447E25DABFB0006C5EAA /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A447D25DABFB0006C5EAA /* ShareView.swift */; };
+		188A448125DABFFF006C5EAA /* RectGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A448025DABFFF006C5EAA /* RectGetter.swift */; };
 		18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */; };
 		18EE491D25C2EA32004168EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE491C25C2EA32004168EF /* MainView.swift */; };
 		18EE491F25C2EA38004168EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EE491E25C2EA38004168EF /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		188770FF25CB0AC2008028BC /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
 		188A445E25D687C9006C5EAA /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		188A446425D68847006C5EAA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		188A447D25DABFB0006C5EAA /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		188A448025DABFFF006C5EAA /* RectGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectGetter.swift; sourceTree = "<group>"; };
 		18EE491725C2EA32004168EF /* instagridSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagridSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EE491A25C2EA32004168EF /* instagridSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagridSwiftUIApp.swift; sourceTree = "<group>"; };
 		18EE491C25C2EA32004168EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				18EE498825C32CE7004168EF /* GridLayout.swift */,
 				18EE499025C32F74004168EF /* HeaderView.swift */,
 				188770F625CAF503008028BC /* LayoutButtons.swift */,
+				188A448025DABFFF006C5EAA /* RectGetter.swift */,
 			);
 			path = "Supporting views";
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				188A446425D68847006C5EAA /* ImagePicker.swift */,
+				188A447D25DABFB0006C5EAA /* ShareView.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -204,12 +210,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188A448125DABFFF006C5EAA /* RectGetter.swift in Sources */,
 				188A445F25D687C9006C5EAA /* ImagePickerViewModel.swift in Sources */,
 				1887710025CB0AC2008028BC /* LayoutViewModel.swift in Sources */,
 				18EE491D25C2EA32004168EF /* MainView.swift in Sources */,
 				188770F725CAF503008028BC /* LayoutButtons.swift in Sources */,
 				18EE491B25C2EA32004168EF /* instagridSwiftUIApp.swift in Sources */,
 				188A446525D68847006C5EAA /* ImagePicker.swift in Sources */,
+				188A447E25DABFB0006C5EAA /* ShareView.swift in Sources */,
 				18EE499125C32F74004168EF /* HeaderView.swift in Sources */,
 				18EE498925C32CE7004168EF /* GridLayout.swift in Sources */,
 			);
