@@ -6,7 +6,7 @@ struct MainView: View {
 
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
-    
+
     @State var verticalOffset: CGFloat = CGFloat.zero
     @State var horizontalOffset: CGFloat = CGFloat.zero
 
@@ -14,16 +14,13 @@ struct MainView: View {
     @State var gridImage: UIImage? = nil
     @State var activeSheet: ActiveSheet?
     @State var isGridLayoutEmpty: Bool = false
-    private func isPortraitMode() -> Bool {
-        return horizontalSizeClass == .compact && verticalSizeClass == .regular
-    }
-    
+
     var body: some View {
         let headerView = HeaderView()
         let gridLayout = GridLayout(activeSheet: $activeSheet, rect: $rect)
             .offset(x: horizontalOffset, y: verticalOffset)
         let layoutButtons = LayoutButtons()
-
+        
         ZStack {
             Color.yellow
                 .edgesIgnoringSafeArea(.all)
@@ -61,13 +58,10 @@ struct MainView: View {
                         }
                     }
                     .frame(width: geometry.size.width,
-                            height: geometry.size.height,
-                        alignment: .center)
+                           height: geometry.size.height,
+                           alignment: .center)
                 }
             }
-            
-            
-
         }
         .sheet(item: $activeSheet) { item in
             switch item {
@@ -80,14 +74,12 @@ struct MainView: View {
                     }
                 )
             case .share:
-                
-                    ShareView(activityItems: [self.gridImage as Any], callback: {_,_,_,_ in
-                        withAnimation {
-                            self.verticalOffset = 0
-                            self.horizontalOffset = 0
-                        }
-                    })
-
+                ShareView(activityItems: [self.gridImage as Any], callback: {_,_,_,_ in
+                    withAnimation {
+                        self.verticalOffset = 0
+                        self.horizontalOffset = 0
+                    }
+                })
             }
         }
         .alert(isPresented: $isGridLayoutEmpty) {
@@ -99,31 +91,91 @@ struct MainView: View {
             }))
         }
         .gesture(DragGesture(minimumDistance: 3, coordinateSpace: .global)
-            .onEnded({ (value) in
-                gridImage = UIApplication.shared.windows[0].rootViewController?.view.asImage(rect: self.rect)
-                // up swipe
-                if value.translation.height < 0 && isPortraitMode() {
-                    withAnimation {
-                        self.verticalOffset = -UIScreen.main.bounds.size.height
-                    }
-                }
-                // left swipe
-                else if value.translation.width < 0 && !isPortraitMode() {
-                    withAnimation {
-                        self.horizontalOffset = -UIScreen.main.bounds.size.width
-                    }
-                }
-                
-                if imagePickerViewModel.selectedImageTopRight != nil
-                || imagePickerViewModel.selectedImageTopLeft != nil
-                || imagePickerViewModel.selectedImageBottomRight != nil
-                || imagePickerViewModel.selectedImageBottomLeft != nil {
-                    activeSheet = .share
-                } else {
-                    isGridLayoutEmpty = true
-                }
-            })
+                    .onEnded({ (value) in
+                        gridImage = UIApplication.shared.windows[0].rootViewController?.view.asImage(rect: self.rect)
+                        // up swipe
+                        if value.translation.height < 0 && isPortraitMode() {
+                            withAnimation {
+                                self.verticalOffset = -UIScreen.main.bounds.size.height
+                            }
+                        }
+                        // left swipe
+                        else if value.translation.width < 0 && !isPortraitMode() {
+                            withAnimation {
+                                self.horizontalOffset = -UIScreen.main.bounds.size.width
+                            }
+                        }
+                        
+                        if isShowingAtLeastOneImage() {
+                            activeSheet = .share
+                        } else {
+                            isGridLayoutEmpty = true
+                        }
+                    })
         )
+    }
+    
+    private func isPortraitMode() -> Bool {
+        return horizontalSizeClass == .compact && verticalSizeClass == .regular
+    }
+    
+    
+}
+
+// Extension for checking presence of image in the gridLayout
+extension MainView {
+    private var isFirstLayoutButtonSelected: Bool {
+        return layoutViewModel.showBottomRightRectangle && !layoutViewModel.showTopLeftRectangle
+    }
+    
+    private var isContainingImageForFirstLayoutButton: Bool {
+        return imagePickerViewModel.selectedImageTopRight != nil
+            || imagePickerViewModel.selectedImageBottomRight != nil
+            || imagePickerViewModel.selectedImageBottomLeft != nil
+    }
+    
+    private var isSecondLayoutButtonSelected: Bool {
+        return !layoutViewModel.showBottomRightRectangle && layoutViewModel.showTopLeftRectangle
+    }
+    
+    private var isContainingImageForSecondLayoutButton: Bool {
+        return imagePickerViewModel.selectedImageTopRight != nil
+            || imagePickerViewModel.selectedImageTopLeft != nil
+            || imagePickerViewModel.selectedImageBottomLeft != nil
+    }
+    
+    private var isThirdLayoutButtonSelected: Bool {
+        return layoutViewModel.showBottomRightRectangle && layoutViewModel.showTopLeftRectangle
+    }
+    
+    private var isContainingImageForThirdLayoutButton: Bool {
+        return imagePickerViewModel.selectedImageTopRight != nil
+            || imagePickerViewModel.selectedImageTopLeft != nil
+            || imagePickerViewModel.selectedImageBottomRight != nil
+            || imagePickerViewModel.selectedImageBottomLeft != nil
+    }
+    
+    private func isShowingAtLeastOneImage() -> Bool {
+        var isShowing: Bool = false
+        // Check presence of image for the first LayoutButton configuration
+        if isFirstLayoutButtonSelected {
+            if isContainingImageForFirstLayoutButton {
+                isShowing = true
+            }
+        }
+        // Check presence of image for the second LayoutButton configuration
+        else if isSecondLayoutButtonSelected {
+            if isContainingImageForSecondLayoutButton {
+                isShowing = true
+            }
+        }
+        // Check presence of image for the third LayoutButton configuration
+        else if isThirdLayoutButtonSelected {
+            if isContainingImageForThirdLayoutButton {
+                isShowing = true
+            }
+        }
+        return isShowing
     }
 }
 
