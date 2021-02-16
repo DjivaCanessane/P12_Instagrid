@@ -22,32 +22,6 @@ struct MainView: View {
         let headerView = HeaderView()
         let gridLayout = GridLayout(activeSheet: $activeSheet, rect: $rect)
             .offset(x: horizontalOffset, y: verticalOffset)
-            .gesture(DragGesture(minimumDistance: 3, coordinateSpace: .global)
-                .onEnded({ (value) in
-                    gridImage = UIApplication.shared.windows[0].rootViewController?.view.asImage(rect: self.rect)
-                    // up swipe
-                    if value.translation.height < 0 && isPortraitMode() {
-                        withAnimation {
-                            self.verticalOffset = -800
-                        }
-                    }
-                    // left swipe
-                    else if value.translation.width < 0 && !isPortraitMode() {
-                        withAnimation {
-                            self.horizontalOffset = -800
-                        }
-                    }
-                    
-                    if imagePickerViewModel.selectedImageTopRight != nil
-                    || imagePickerViewModel.selectedImageTopLeft != nil
-                    || imagePickerViewModel.selectedImageBottomRight != nil
-                    || imagePickerViewModel.selectedImageBottomLeft != nil {
-                        activeSheet = .share
-                    } else {
-                        isGridLayoutEmpty = true
-                    }
-                })
-            )
         let layoutButtons = LayoutButtons()
 
         ZStack {
@@ -78,11 +52,12 @@ struct MainView: View {
                                 .font(Font.custom("ThirstySoftRegular", size: 30))
                                 .padding(.top, 8)
                             gridLayout
-                            
                         }
                         
                         VStack {
+                            Spacer()
                             layoutButtons
+                            Spacer()
                         }
                     }
                     .frame(width: geometry.size.width,
@@ -123,6 +98,32 @@ struct MainView: View {
                 }
             }))
         }
+        .gesture(DragGesture(minimumDistance: 3, coordinateSpace: .global)
+            .onEnded({ (value) in
+                gridImage = UIApplication.shared.windows[0].rootViewController?.view.asImage(rect: self.rect)
+                // up swipe
+                if value.translation.height < 0 && isPortraitMode() {
+                    withAnimation {
+                        self.verticalOffset = -UIScreen.main.bounds.size.height
+                    }
+                }
+                // left swipe
+                else if value.translation.width < 0 && !isPortraitMode() {
+                    withAnimation {
+                        self.horizontalOffset = -UIScreen.main.bounds.size.width
+                    }
+                }
+                
+                if imagePickerViewModel.selectedImageTopRight != nil
+                || imagePickerViewModel.selectedImageTopLeft != nil
+                || imagePickerViewModel.selectedImageBottomRight != nil
+                || imagePickerViewModel.selectedImageBottomLeft != nil {
+                    activeSheet = .share
+                } else {
+                    isGridLayoutEmpty = true
+                }
+            })
+        )
     }
 }
 
